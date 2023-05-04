@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CustomForm from "./components/custom-form";
 
-function App() {
+const App = () => {
+  const addTask = (task) => {
+    console.log(task);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>My Task List</h1>
       </header>
+      <CustomForm addTask={addTask} />
     </div>
   );
-}
+};
 
 export default App;
