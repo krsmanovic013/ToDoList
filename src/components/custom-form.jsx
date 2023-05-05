@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { PlusIcon } from "@heroicons/react/24/solid";
+import "../index.css";
 
 const CustomForm = ({ addTask }) => {
   const handleFormSubmit = (e) => {
@@ -32,9 +33,9 @@ const CustomForm = ({ addTask }) => {
           maxLength={60}
           placeholder="Enter Task"
         />
-        <label htmlFor="task" className="label">
+        {/* <label htmlFor="task" className="label1">
           ENTER TASK
-        </label>
+        </label> */}
       </div>
       <button className="btn" aria-label="Add Task" type="submit">
         <PlusIcon />
